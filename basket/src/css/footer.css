@@ -1,0 +1,85 @@
+footer{
+    width: 100%;
+    background: #2a2a2a;
+    margin-top: 80px;
+}
+.social{
+    width: 100%;
+    height: 70px;
+    color:#f3f3f3;
+    border-bottom: 1px solid #b2b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social img{
+    height:50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.otherOffers{
+    color:white;
+    width:1200px;
+    margin: 0 auto;
+    display: flex;
+    height:360px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.otherOffers img{
+width:100px;
+height:64px;
+}
+.phone{
+    font-size: 25px;
+    margin-left: 10px;
+}
+.phone, .otherOffers img{
+    margin-top: 15px;
+}
+.phone span{
+    font-size: 13px;
+    height: 30px;
+    color: #cacaca;
+}
+.footerMenu{
+    
+}
+.footerMenu li{
+    color: #cacaca;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 15px;
+    width:170px;
+}
+.copyright{
+    color:#cacaca;
+    height: 135px;
+    border-top: 1px solid #b2b2b2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.copyright div{
+    font-size: 12px;
+    width: 450px;
+}
+@media(max-width:1200px){
+    .otherOffers{width: 100%}
+}
+@media (max-width: 920px){
+    .social div{
+display: none;
+    }
+    .social{
+        padding: 15px;
+        border-bottom: 0px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+   .otherOffers{
+       display: none;
+   }
+}

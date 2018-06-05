@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:500');
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+.overhead,
+.middlhead,
+.LeftTest,
+.forClient, .blog a, .logo{ display: flex;  align-items: center;}
+.overhead{
+    width:1200px;
+    margin: 0 auto;
+    height: 40px;
+     justify-content: space-between;  
+}
+.number{
+    font-size: 12px;
+}
+.number a{
+    font-size: 18px;
+    text-decoration:none;
+    color:black;
+}
+.blog{
+    display: flex;
+    align-items: center;
+}
+.blog a{
+    margin-left: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+ .middlhead{
+  width:1200px;
+    margin: 0 auto;
+    justify-content: space-between;  
+  
+    background: #ffffff;
+    height: 84px;
+ }
+ .LeftTest{
+    justify-content: space-between;  
+    width: 400px;
+ }
+ 
+ .forClient{
+    justify-content: space-between;  
+    width: 250px;
+ }
+ 
+ .LeftTest input{
+     width: 160px;
+     text-decoration: none;
+     border: none;
+     outline:none;
+border-bottom: 1px solid black;
+background-image: url("../img/search.png");
+background-repeat: no-repeat;
+background-position: 5px;
+background-position-x: 140px;
+height: 20px;
+background-repeat: no-repeat;
+ }
+ input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+ input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+ input[type="search"]::-webkit-search-decoration,
+ input[type="search"]::-webkit-search-cancel-button,
+ input[type="search"]::-webkit-search-results-button,
+ input[type="search"]::-webkit-search-results-decoration { display: none; }
+ .blog a > div{
+ margin-left:3px;
+}
+ @media (max-width: 1200px){
+     .overhead{
+         width: 100%;
+     }
+     .middlhead{
+         width: 100%;
+     }
+     .blog{
+         margin-left: 20px;
+     }
+.blog a > div{
+    display: none;
+}
+.number{
+   margin-left: 10px;
+}
+.forClient{
+    width: auto;
+    justify-content: center;
+}
+.forClient img{
+    margin-right:20px;
+}
+.forClient div {
+display: none;
+ }
+ }
+ @media (max-width: 920px){
+    .number a{
+        font-size: 15px;
+    }
+    .number span{display: none;}
+
+}
+@media (max-width: 510px){
+    .middlhead{
+        height: auto;
+    }
+    .LeftTest{
+        margin:10px; 
+        display: flex;
+        justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    }
+    .LeftTest input{
+        margin: 25px;
+    }
+    .forClient{
+        margin: 10px;
+        display: block;
+        width: 50px;
+
+    }
+}

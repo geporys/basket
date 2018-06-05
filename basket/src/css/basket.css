@@ -1,0 +1,244 @@
+menu{
+margin: 0 auto;
+width: 1230px;
+
+}
+.deleteOnPhone{
+    display: none;
+}
+.nameBasket { 
+    height: 100px;
+    margin-top: 68px;
+    font-size: 22px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+   }
+   .nameBasket:before,
+   .nameBasket:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: #000;
+    z-index: -1;
+    position: relative;
+    vertical-align: middle;
+   }
+   .nameBasket:before {
+    right: 15px;
+    margin: 0 0 0 -100%;
+   }
+   .nameBasket:after {
+    left: 15px;
+    margin: 0 -100% 0 0;
+   }
+
+table{
+    border-spacing: 0px 34px;
+}
+.description{
+    width: 230px;
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+}
+.description div{
+    margin-bottom: 10px;
+   
+}
+.change{
+    vertical-align: top;
+    text-align: center;
+    width: 600px;
+}
+.PPrice{
+    vertical-align: top;
+    text-align: center;
+    font-weight: 600;
+    width:550px;
+}
+.delete{
+    vertical-align: top;
+    color:#1d1d1b;
+    font-size: 17px;
+    
+}
+.delete span{
+    vertical-align: top;
+    float: right;
+   text-align:center;
+    cursor: pointer; 
+}
+.change span{
+   
+    font-size:20px;
+    color: #9c9c9c;
+    display: inline-block;
+    cursor: pointer;
+
+}
+.basketTable td{
+    min-width: 200px;
+ /* border: 1px solid black;*/
+}
+.basketTable tr{
+   margin-top: 20px;
+}
+
+.bottomBasket{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;  
+    height: 266px;
+}
+.bottomBasket input{
+    padding: 6px 8px;
+    text-decoration: none;
+     border: 2px solid #dadada;
+     width: 250px;
+     height: 40px;
+     outline:none;
+}
+
+.bottomBasket button{
+    font-size: 14px;
+border-radius: 20px;
+background: #b7b7b7;
+width: 170px;
+height: 40px;
+color:white;
+margin-left:10px;
+outline:none;
+}
+.cashbox > button{
+    background: #ff6c00;
+margin-top:20px;
+float: right;
+width:160px;
+}
+.offers{
+    display: flex;
+    justify-content: space-between;
+
+}
+.offers div{
+    text-align: center;
+}
+.cashbox{
+  width: 400px;
+}
+.cashbox div{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.voting{
+    width: 50px;
+    display: inline-block;
+}
+@media (max-width: 1270px){
+
+    menu{width: 100%;
+    margin: -39px;
+    }
+    .offers{
+        display: flex;
+        justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    }
+    .offers a{
+        margin: 30px;
+        font-size: 16px;  
+        height: auto;
+        width: 200px;
+ 
+    }
+    .bottomBasket{
+        margin-left:10px;
+    }
+    .bottomBasket button{
+        margin-top: 10px;
+    }
+    .cashbox{
+        margin-right: 10px;
+    }
+    .change, .PPrice, .delete{
+        width: 15%;
+    }
+}
+@media(max-width:1052px)
+{
+    table td{
+        width:50px;
+    }
+    .change, .PPrice{
+        width:5%;
+    }
+    .delete span{
+        float:left;
+        text-align:"";
+    }
+
+}
+@media(max-width: 850px)
+{
+    table img{
+        widows: 200px;
+        height: 200px;
+    }
+    .totalTable{
+        display: none;
+    }
+    .change{
+        font-size: 20px;
+    }
+    .description{
+        font-size: 18px;
+    }
+    .change span{
+        font-size: 30px;
+    }
+    .PPrice{
+        font-size: 20px;
+    }
+    .delete{
+     display: none;
+    }
+    table td{
+        display: block;
+    }
+    table tr{
+        display: block;
+        margin-top:30px;
+        width: 100%;
+    }
+
+    .deleteOnPhone{
+        display: block;
+        cursor: pointer; 
+        font-size: 20px;
+        float: right;
+    }
+    .basketTable{
+display: flex;
+justify-content: center;
+    }
+}
+@media(max-width:560px){
+    
+    .bottomBasket{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        height: auto;
+        flex-wrap: wrap;
+    } 
+    
+    .cashbox{
+        margin-top: 50px;
+    }
+}
